@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "VK Hide All Friends",
+	"short_name": "VkHAF",
+	"description": "Скрыть всех друзей vk",
+	"version": "1.0",
+	"permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+	    {
+	      "matches": [ "https://vk.com/*" ],
+	      "run_at": "document_end",
+	      "js": [ "injected.js" ]
+	    }
+  	],
+	"browser_action": {
+        "default_popup": "popup.html"
+    },
+	"icons": {
+		"128": "128.png"
+	},
+	"web_accessible_resources": [
+		"/script.js"
+	]
+}
