@@ -12,16 +12,16 @@
 	    {
 	      "matches": [ "https://vk.com/*" ],
 	      "run_at": "document_end",
-	      "js": [ "injected.js" ]
+	      "js": [ "js/injected.js" ]
 	    }
   	],
 	"browser_action": {
         "default_popup": "popup.html"
     },
 	"icons": {
-		"128": "128.png"
+		"128": "img/128.png"
 	},
 	"web_accessible_resources": [
-		"/script.js"
+		"/js/script.js"
 	]
 }
